@@ -5,7 +5,7 @@ import { AccountModal } from './components/AccountModal';
 import { CartModal } from './components/CartModal';
 import { PromotionsModal } from './components/PromotionsModal';
 import { validateRequest } from '@/lib/auth';
-// Importe os novos modais
+// Importe os dois novos modais
 import { TermsModal } from './components/TermsModal';
 import { PolicyModal } from './components/PolicyModal';
 
@@ -26,7 +26,7 @@ export default async function LojaLayout({ children }: { children: ReactNode }) 
       <AccountModal />
       <CartModal />
       <PromotionsModal />
-      {/* Adicione os novos modais aqui */}
+      {/* Adicione estas duas linhas */}
       <TermsModal />
       <PolicyModal />
       <main className="flex-grow">{children}</main>

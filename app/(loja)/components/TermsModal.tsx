@@ -23,13 +23,9 @@ export function TermsModal() {
         <div className="flex-grow overflow-y-auto pr-4 text-gray-600 space-y-4">
             <p><strong>Última atualização:</strong> 15 de Junho de 2025</p>
             <h3 className="font-bold text-lg text-gray-700 pt-2">1. Aceitação dos Termos</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-            <h3 className="font-bold text-lg text-gray-700 pt-2">2. Uso do Serviço</h3>
-            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.</p>
-            <h3 className="font-bold text-lg text-gray-700 pt-2">3. Contas de Usuário</h3>
-            <p>Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti.</p>
-            <h3 className="font-bold text-lg text-gray-700 pt-2">4. Propriedade Intelectual</h3>
-            <p>Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.</p>
+            <p>Ao acessar e usar o site Andressa Modas, você concorda em cumprir estes Termos de Serviço e todas as leis e regulamentos aplicáveis. Se você não concorda com algum destes termos, está proibido de usar ou acessar este site.</p>
+            <h3 className="font-bold text-lg text-gray-700 pt-2">2. Uso da Licença</h3>
+            <p>A permissão é concedida para baixar temporariamente uma cópia dos materiais no site Andressa Modas, apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título.</p>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ interface ModalContextType {
   setAccountModalOpen: (isOpen: boolean) => void;
   isPromotionsModalOpen: boolean;
   setPromotionsModalOpen: (isOpen: boolean) => void;
-  // Adicionamos os novos estados para os modais legais
+  // Adicione as duas linhas seguintes
   isTermsModalOpen: boolean;
   setTermsModalOpen: (isOpen: boolean) => void;
   isPolicyModalOpen: boolean;
@@ -22,7 +22,7 @@ export function ModalProvider({ children }: { children: ReactNode }) {
   const [isCartModalOpen, setCartModalOpen] = useState(false);
   const [isAccountModalOpen, setAccountModalOpen] = useState(false);
   const [isPromotionsModalOpen, setPromotionsModalOpen] = useState(false);
-  // Adicionamos os novos states
+  // Adicione os dois states seguintes
   const [isTermsModalOpen, setTermsModalOpen] = useState(false);
   const [isPolicyModalOpen, setPolicyModalOpen] = useState(false);
 
@@ -34,10 +34,21 @@ export function ModalProvider({ children }: { children: ReactNode }) {
       setAccountModalOpen,
       isPromotionsModalOpen,
       setPromotionsModalOpen,
-      // Adicionamos os novos valores ao provider
+      // Adicione os valores seguintes
       isTermsModalOpen,
       setTermsModalOpen,
       isPolicyModalOpen,
       setPolicyModalOpen,
     }}>
       {children}
+    </ModalContext.Provider>
+  );
+}
+
+export function useModal() {
+  const context = useContext(ModalContext);
+  if (context === undefined) {
+    throw new Error('useModal must be used within a ModalProvider');
+  }
+  return context;
+}

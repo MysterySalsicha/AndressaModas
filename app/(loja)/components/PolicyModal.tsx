@@ -23,13 +23,9 @@ export function PolicyModal() {
         <div className="flex-grow overflow-y-auto pr-4 text-gray-600 space-y-4">
             <p><strong>Última atualização:</strong> 15 de Junho de 2025</p>
             <h3 className="font-bold text-lg text-gray-700 pt-2">1. Coleta de Informações</h3>
-            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.</p>
-            <h3 className="font-bold text-lg text-gray-700 pt-2">2. Uso das Informações</h3>
-            <p>Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue.</p>
-            <h3 className="font-bold text-lg text-gray-700 pt-2">3. Compartilhamento de Dados</h3>
-            <p>Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque.</p>
-            <h3 className="font-bold text-lg text-gray-700 pt-2">4. Segurança dos Dados</h3>
-            <p>Nullam mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer risus et tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <p>Coletamos informações que você nos fornece diretamente, como quando você cria uma conta, faz um pedido ou se comunica com o nosso serviço de atendimento ao cliente. As informações podem incluir seu nome, e-mail, endereço de entrega e número de telefone.</p>
+            <h3 className="font-bold text-lg text-gray-700 pt-2">2. Segurança dos Dados</h3>
+            <p>A segurança de seus dados é importante para nós. Usamos medidas de segurança para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição.</p>
         </div>
       </div>
     </div>
