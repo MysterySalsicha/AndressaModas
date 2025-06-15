@@ -5,5 +5,11 @@
       "src": "next.config.mjs",
       "use": "@vercel/next"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/(loja)/$1"
+    }
   ]
 }
