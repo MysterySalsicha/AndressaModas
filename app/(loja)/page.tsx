@@ -1,7 +1,6 @@
 // app/(loja)/page.tsx
 import ProductCard from "./components/ProductCard";
 
-// (A função getProducts continua a mesma)
 async function getProducts(categoryId?: string) {
   try {
     const apiUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
@@ -22,7 +21,8 @@ export default async function HomePage({ searchParams }: { searchParams: { categ
   const products = await getProducts(searchParams.categoria);
 
   return (
-    <main>
+    // O <main> agora é controlado pelo layout da loja
+    <>
       <section className="hero-section">
         <h1>Nova Coleção</h1>
         <p>Descubra as últimas tendências e peças exclusivas.</p>
@@ -38,11 +38,11 @@ export default async function HomePage({ searchParams }: { searchParams: { categ
             ))
           ) : (
             <p style={{ textAlign: 'center', gridColumn: '1 / -1' }}>
-              Nenhum produto encontrado no momento. Verifique a conexão com a API ou o terminal em busca de erros.
+              Nenhum produto encontrado. Verificando conexão...
             </p>
           )}
         </div>
       </section>
-    </main>
+    </>
   );
 }
