@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from 'next/font/google';
 
 // CORREÇÃO: O caminho agora é '../globals.css' para "subir" um nível de pasta.
-import '../globals.css'; 
+import '../globals.css';
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
