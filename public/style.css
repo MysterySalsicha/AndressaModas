@@ -1,0 +1,129 @@
+/* public/style.css */
+
+/* Definição de Variáveis de Cor para fácil manutenção */
+:root {
+  --brand-pink: #E75480;
+  --brand-deep-pink: #D94A75;
+  --brand-blush: #F8E8EE;
+  --brand-dark: #333333;
+  --brand-gray: #666666;
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+/* Reset Básico e Estilos do Body */
+body {
+  font-family: var(--font-body);
+  background-color: #f9fafb;
+  color: var(--brand-dark);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  min-height: 70vh;
+}
+
+/* Estilos do Cabeçalho (Header) */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.main-header .logo h1 {
+  font-family: var(--font-display);
+  color: var(--brand-pink);
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.actions-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  color: var(--brand-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.action-button:hover {
+  color: var(--brand-pink);
+}
+
+/* Estilos da Seção Hero */
+.hero-section {
+    background-color: var(--brand-blush);
+    padding: 5rem 1rem;
+    text-align: center;
+}
+.hero-section h1 {
+    font-family: var(--font-display);
+    color: var(--brand-pink);
+    font-size: 3.5rem;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    color: var(--brand-gray);
+}
+
+/* Grade de Produtos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Estilo do Modal - A Chave para a Funcionalidade */
+.modal-overlay {
+  position: fixed; /* Fica fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Fica acima de todo o conteúdo */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem

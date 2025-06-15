@@ -1,0 +1,107 @@
+/* app/globals.css */
+
+/* 1. Definição de Variáveis */
+:root {
+  --font-body: var(--font-inter);
+  --font-display: var(--font-playfair);
+  --color-primary: #D94A75;
+  --color-secondary: #F8E8EE;
+  --color-text-dark: #2d2d2d;
+  --color-background: #ffffff;
+  --color-border: #e5e7eb;
+}
+
+/* 2. Estilos Globais */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body), sans-serif;
+  color: var(--color-text-dark);
+  background-color: #f9fafb;
+}
+* { box-sizing: border-box; }
+main { min-height: 70vh; }
+h1, h2, h3 { font-family: var(--font-display), serif; }
+
+/* 3. Estilos do Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+.actions-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.cart-counter {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* 4. A CORREÇÃO PRINCIPAL: Estilos do Modal */
+.modal-overlay {
+  position: fixed; /* Fica fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Fica acima de todo o conteúdo */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #aaa;
+}
