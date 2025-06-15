@@ -24,7 +24,7 @@ interface ICartContext {
 // Cria o Contexto
 const CartContext = createContext<ICartContext | undefined>(undefined);
 
-// Cria o componente "Provider"
+// Cria o componente "Provider" que irá fornecer os dados do carrinho
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
@@ -33,10 +33,12 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setCartItems(prevItems => {
       const existingItem = prevItems.find(item => item.id === product.id);
       if (existingItem) {
+        // Se o item já existe, aumenta a quantidade
         return prevItems.map(item =>
           item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
         );
       }
+      // Se é um item novo, adiciona ao carrinho com quantidade 1
       return [...prevItems, { ...product, quantity: 1 }];
     });
     alert(`${product.nome} adicionado ao carrinho!`);
@@ -52,7 +54,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setCartItems([]);
   };
 
-  // Calcula a quantidade total de itens
+  // Calcula a quantidade total de itens para o contador
   const cartItemCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
   // Agora, com todas as funções definidas, podemos criar o valor do contexto
